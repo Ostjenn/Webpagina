@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<title>Formulieren post</title>
+	</head>
+	
+	<body>
+		
+		<form action="toon_waarden_post.php" method="post" >
+
+        	<p>Voornaam : <input type="text" name="voornaam" /></p>
+        	<!-- je vindt na submit de voornaam terug in $_POST['voornaam'] -->
+        	
+			<p>Achternaam : <input type="text" name="achternaam" /></p>
+			<p>Classicburger : <input type="text" name="Classicburger" /></p>
+			<p>Cheeseburger : <input type="text" name="Cheeseburger" /></p>
+			<p>Kipburger : <input type="text" name="Kipburger" /></p>
+			<p>Veggieburger : <input type="text" name="Veggieburger" /></p>
+			<p>Groeten : Ja <input type="checkbox" name="groenten" value="ja" /> Nee <input type="checkbox" name="groenten" value="nee"/></p> 
+			
+			<p> Uur : <select name="uur">
+				<option value="">Selecteer</option>
+				<option value="18u">18u</option>
+				<option value="18:30u">18:30u</option>
+				<option value="19u">19u</option>
+				<option value="19:30u">19:30u</option>
+				<option value="20u">20u</option>
+			</select></p>
+			<p>Verdere opmerkingen:</p>
+			<p> <textarea name="commentaar" rows="20" cols="60"></textarea> </p>
+			<p><input type="submit" name="besteld" value="Bestel" /></p>
+        
+        </form>
+		
+				
+		
+	
+	</body>	
+	
+</html>
